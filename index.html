@@ -11,9 +11,11 @@
 
 <body>
 
-  <div class="jumbotron bg-success text-center">
-    <h1>Weather searching tool</h1>
-  </div>
+  <header class="jumbotron bg-success text-center rounded-0 text-light">
+    <h1>Weather Checker</h1>
+
+    <h4 id="date"></h4>
+  </header>
 
 
 
@@ -33,7 +35,7 @@
       <div class="input-group mb-3">
 
 
-        <!-- button for saving -->
+        <!-- button  -->
         <div class="input-group-prepend">
           <button class="btn btn-outline-primary btn-lg" type="button" id="btnSubmit">Start the Weather</button>
         </div>
@@ -41,17 +43,20 @@
         <!-- input -->
         <input type="text" class="form-control form-control-lg text-primary" placeholder=""
           aria-label="Example text with button addon" aria-describedby="button-addon1" id="userInput">
-      </div>
+
+      </div><br>
+
     </div>
 
 
-    <h4 id="date"></h4>
-    <div class="bg-success" id="icon"></div>
-    <h4 id="temp"></h4>
-    <h4 id="humidity"></h4>
-    <h4 id="wind"></h4>
-    <h4 id="uv"></h4>
 
+    <div class="bg-success" id="icon"></div>
+    <div class="bg-light text-primary ">
+      <h4 class=" text-success" id="temp"></h4>
+      <h4 id="humidity"></h4>
+      <h4 id="wind"></h4>
+      <h4 id="uv"></h4>
+    </div>
   </div>
 
   <br>
